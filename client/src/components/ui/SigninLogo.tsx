@@ -10,7 +10,7 @@ const SigninLogo: React.FC = () => {
                     <span className="error-underline neon-text">imprffct</span> games
                 </h1>
                 <a
-                    href="https://adrian-anta.netlify.app/"
+                    href="https://adriananta.dev/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xs flex opacity-60 hover:opacity-75 transition-opacity ease-in-out duration-250"
