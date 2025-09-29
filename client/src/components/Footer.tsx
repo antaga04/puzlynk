@@ -58,7 +58,7 @@ const Footer = () => {
                         <p className="opacity-65 md:opacity-90">
                             {t('footer.author')}{' '}
                             <a
-                                href="https://adrian-anta.netlify.app/"
+                                href="https://adriananta.dev/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="whitespace-nowrap devil-detail"
