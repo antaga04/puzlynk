@@ -10,5 +10,12 @@
     "license": "ISC",
     "devDependencies": {
         "prettier": "^3.6.2"
+    },
+    "pnpm": {
+        "overrides": {
+            "glob": ">=10.5.0",
+            "jws": ">=3.2.3",
+            "js-yaml": ">=4.1.1"
+        }
     }
 }
