@@ -12,3 +12,7 @@ ignoredBuiltDependencies:
   - bcrypt
   - core-js
   - esbuild
+
+allowBuilds:
+  bcrypt: true
+  esbuild: true
