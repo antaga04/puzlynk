@@ -2,6 +2,12 @@ packages:
   - client
   - server
 
+overrides:
+  glob: '>=10.5.0'
+  jws: '>=3.2.3'
+  js-yaml: '>=4.1.1'
+  esbuild: '>=0.28.1'
+
 ignoredBuiltDependencies:
   - bcrypt
   - core-js
