@@ -1,6 +1,7 @@
 {
     "name": "imprffctgames",
     "version": "1.0.0",
+    "packageManager": "pnpm@11.9.0",
     "description": "This simple proyect mono-repo using pnpm, React ts and node js with express and mongodb.",
     "scripts": {
         "format": "prettier --write ."
