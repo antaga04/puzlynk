@@ -55,7 +55,7 @@ app.use('/hello', helloWorldLimiter, (req, res) => {
 });
 
 // Controlador de rutas no encontradas
-app.use('*', (req, res, next) => {
+app.use((req, res, next) => {
     return sendError(res, 404, {
         i18n: 'not_found',
         message: 'Route not found',

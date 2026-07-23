@@ -49,7 +49,7 @@ export const getAllScores = async (req: Request, res: Response) => {
 
 export const deleteScore = async (req: Request, res: Response) => {
     try {
-        const { id } = req.params;
+        const { id } = req.params as { id: string };
         if (!Types.ObjectId.isValid(id)) {
             return sendError(res, 400, {
                 i18n: 'score.invalid_id',
@@ -72,7 +72,7 @@ export const deleteScore = async (req: Request, res: Response) => {
 
 export const getScoresByGameId = async (req: Request, res: Response) => {
     try {
-        const { game_id } = req.params;
+        const { game_id } = req.params as { game_id: string };
         const { page = 1, limit = 10, variant } = req.query;
 
         const scores = await Score.find({ game_id, variant })

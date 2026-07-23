@@ -127,7 +127,7 @@ export const createGame = async (req: Request, res: Response) => {
 // PUT /games/:id - Update a game by ID
 export const updateGameById = async (req: Request, res: Response) => {
     try {
-        const { id } = req.params;
+        const { id } = req.params as { id: string };
         const { name, difficulty, type, scoringLogic } = req.body;
 
         if (!id.match(/^[0-9a-fA-F]{24}$/)) {
@@ -196,7 +196,7 @@ export const updateGameById = async (req: Request, res: Response) => {
 // DELETE /games/:id - Delete a game by ID
 export const deleteGame = async (req: Request, res: Response) => {
     try {
-        const { id } = req.params;
+        const { id } = req.params as { id: string };
 
         if (!id.match(/^[0-9a-fA-F]{24}$/)) {
             return sendError(res, 400, { i18n: 'games.invalid_id', message: 'Invalid game ID' });

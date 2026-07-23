@@ -68,7 +68,7 @@ export const generatePokemonSession = async (req: Request, res: Response) => {
 // GET /:gameSessionId/:batchNumber - Fetch additional Pokémon batches for the user
 export const getPokemonBatch = async (req: Request, res: Response) => {
     try {
-        const { gameSessionId, batchNumber } = req.params;
+        const { gameSessionId, batchNumber } = req.params as { gameSessionId: string; batchNumber: string };
         // TODO: Add anticheat validation for previous batch. include in the front the data like keystrokes, etc?
 
         const batchNum = parseInt(batchNumber, 10);
